@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@source "./src/**/*.{rs,html,css}";
+
+@theme {
+    --color-zsu-accent-gold: #ffcc00;
+    --color-zsu-accent-gold-dark: #e6b800;
+
+    --color-zsu-green-dark: #1a1d14;
+    --color-zsu-green-dark-light: #252a1c;
+    --color-zsu-green: #2d3621;
+    --color-zsu-green-light: #3e4a2e;
+    --color-zsu-khaki: #b8b08d;
+    --color-zsu-grey: #9CA3AF;
+    --color-grey-light: #e5e7eb;
+}
+
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+        @apply bg-zsu-green-dark text-grey-light;
+    }
+}
+
+@layer components {
+    .zsu-button-cell {
+        @apply p-2 flex justify-center gap-4 w-full;
+    }
+
+    .zsu-input-cell {
+        @apply flex flex-col gap-1;
+    }
+
+    .zsu-input-grid {
+        @apply grid grid-cols-3 gap-4 mt-2;
+    }
+
+    .zsu-input-field-label {
+        @apply text-xs uppercase text-zsu-grey font-bold;
+    }
+
+    .zsu-input-field {
+        @apply w-full px-4 py-3 bg-zsu-green-dark border border-zsu-green-light rounded focus:outline-none focus:border-zsu-accent-gold transition-colors;
+    }
+
+    .zsu-table {
+        @apply w-full text-center border-collapse text-grey-light;
+    }
+
+    .zsu-table-thead {
+        @apply bg-zsu-green text-xs uppercase tracking-wider text-grey-light;
+    }
+
+    .zsu-table-th {
+        @apply px-6 py-4 font-semibold;
+    }
+
+    .zsu-table-tr {
+        @apply cursor-pointer border-l-2 border-transparent transition-all;
+    }
+
+    .zsu-table-td {
+        @apply px-6 py-4;
+    }
+}

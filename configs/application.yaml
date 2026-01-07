@@ -1,0 +1,14 @@
+qualifier: ua
+organization: ok-pivnich
+application: cadet-hub
+
+logger:
+  level: info
+  file-name: logs/application.log
+  max-file-size-bytes: 10000000
+  max-number-of-files: 3
+
+database:
+  url: # default OS application data folder
+  encryption-enabled: true
+  encryption-key: # default OS keyring

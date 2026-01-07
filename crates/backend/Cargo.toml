@@ -1,0 +1,33 @@
+[package]
+name = "backend"
+version = "1.0.0"
+authors = ["volodymyr-mokliak <v.o.molyak@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+common = { workspace = true }
+
+# Async
+tokio = { workspace = true }
+async-trait = { workspace = true }
+
+# Database
+sqlx = { workspace = true }
+libsqlite3-sys = { workspace = true }
+
+# Security
+argon2 = { workspace = true }
+password-hash = { workspace = true }
+rand_core = { workspace = true }
+
+# Utilities
+thiserror = { workspace = true }
+csv = { workspace = true }
+serde = { workspace = true }
+derive_builder = { workspace = true }
+validator = { workspace = true }
+
+# Testing
+mockall = { workspace = true }
+spectral = { workspace = true }
+tempfile = { workspace = true }

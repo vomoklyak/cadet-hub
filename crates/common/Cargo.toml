@@ -1,0 +1,30 @@
+[package]
+name = "common"
+version = "1.0.0"
+authors = ["volodymyr-mokliak <v.o.molyak@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+# Logger
+tracing-subscriber = { workspace = true }
+tracing-appender = { workspace = true }
+tracing-rolling-file = { workspace = true }
+
+# Security
+uuid = { workspace = true }
+keyring = { workspace = true }
+
+# Utilities
+config = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+serde = { workspace = true }
+getset = { workspace = true }
+derive_builder = { workspace = true }
+validator = { workspace = true }
+tracing = { workspace = true }
+directories = { workspace = true }
+
+# Testing
+spectral = { workspace = true }
+tempfile = "3.25.0"

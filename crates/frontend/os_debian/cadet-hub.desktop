@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Cadet-Hub
+Comment=A short description of your app
+Exec=/usr/lib/cadet-hub/cadet-hub --fullscreen
+Path=/usr/lib/cadet-hub/
+Icon=/usr/share/pixmaps/cadet-hub.png
+Terminal=false
+Categories=Utility;Development;
+Keywords=Cadet;Hub;Cadet-Hub;Vyshkil;Вишкіл;

@@ -1,0 +1,4 @@
+data-directory-path: target
+
+database:
+  encryption-enabled: false

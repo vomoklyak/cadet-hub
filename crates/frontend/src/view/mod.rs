@@ -1,0 +1,15 @@
+pub(crate) mod application;
+pub(crate) mod auth_layout;
+pub(crate) mod cadet_course_edit_view;
+pub(crate) mod cadet_course_grid_view;
+pub(crate) mod cadet_course_impex_view;
+pub(crate) mod cadet_course_list_view;
+pub(crate) mod cadet_course_statistic_grid_view;
+pub(crate) mod cadet_edit_view;
+pub(crate) mod cadet_list_view;
+pub(crate) mod header_layout;
+pub(crate) mod home_view;
+pub(crate) mod login_view;
+pub(crate) mod modal_view;
+pub(crate) mod user_edit_view;
+pub(crate) mod user_list_view;

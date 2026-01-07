@@ -1,0 +1,41 @@
+[package]
+name = "frontend"
+version = "1.0.0"
+authors = ["volodymyr-mokliak <v.o.molyak@gmail.com>"]
+edition = "2021"
+
+[features]
+default = ["desktop"]
+desktop = ["dioxus/desktop"]
+
+[dependencies]
+common = { workspace = true }
+backend = { workspace = true }
+
+# Async
+tokio = { workspace = true }
+
+# Dioxus
+dioxus = { workspace = true }
+dioxus-i18n = { workspace = true }
+rfd = { workspace = true }
+
+# Utilities
+thiserror = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+
+[package.metadata.deb]
+name = "cadet-hub"
+maintainer = "OK Pivnich"
+copyright = "2026, OK Pivnich"
+extended-description = """Cadet Hub"""
+section = "utility"
+assets = [
+    ["os_debian/cadet-hub.desktop", "/usr/share/applications/", "644"],
+    ["assets/icon.png", "/usr/share/pixmaps/cadet-hub.png", "644"],
+    ["../../configs/application.yaml", "/usr/lib/cadet-hub/configs/", "644"],
+    ["../../target/dx/frontend/release/linux/app/assets/*", "/usr/lib/cadet-hub/assets/", "644"],
+    ["../../target/dx/frontend/release/linux/app/frontend", "/usr/lib/cadet-hub/cadet-hub", "755"],
+]
