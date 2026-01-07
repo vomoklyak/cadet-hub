@@ -1,0 +1,10 @@
+.idea
+/.idea/
+
+/target
+
+.DS_Store
+
+**/*.rs.bk
+
+/crates/frontend/assets/tailwind.css

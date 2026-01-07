@@ -1,0 +1,6 @@
+application: test-cadet-hub
+
+data-directory-path: target
+
+database:
+  encryption-enabled: false

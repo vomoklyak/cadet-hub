@@ -1,0 +1,16 @@
+pub(crate) const ADD: &str = "＋";
+pub(crate) const DELETE: &str = "🗑";
+pub(crate) const OK: &str = "✓";
+pub(crate) const CANCEL: &str = "✕";
+pub(crate) const LEFT: &str = "←";
+pub(crate) const RIGHT: &str = "→";
+pub(crate) const IMPORT: &str = "⍈";
+pub(crate) const EXPORT: &str = "⍇";
+pub(crate) const PAGE_INDEX: &str = "№";
+pub(crate) const PAGE_SIZE: &str = "#";
+pub(crate) const PAGE_PREVIOUS: &str = "«";
+pub(crate) const PAGE_NEXT: &str = "»";
+pub(crate) const STATISTIC: &str = "%";
+pub(crate) const GRID: &str = "⌗";
+pub(crate) const DATABASE: &str = "⛃";
+pub(crate) const KEY: &str = "🔑";
